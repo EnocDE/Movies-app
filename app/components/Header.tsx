@@ -12,8 +12,8 @@ import MovieIcon from "./icons/movie-clapperboard-part-2-svgrepo-com.svg"
 export default function Header() {
 	return (
 			<Navbar isBordered maxWidth="2xl">
-				<NavbarContent justify="start">
-            <Image className="md:mr-2" src={MovieIcon} width={24} height={24} alt="Logo movies app" />
+				<NavbarContent>
+            <Image className="mx-auto md:ml-0 md:mr-2 min-w-[24px]" src={MovieIcon} width={24} height={24} alt="Logo movies app" />
 						<p className="font-bold text-inherit hidden md:block">Movies APP</p>
 				</NavbarContent>
 
@@ -26,7 +26,7 @@ export default function Header() {
 							inputWrapper:
 								"h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
 						}}
-						placeholder="Type to search..."
+						placeholder="Escribe un titulo..."
 						size="sm"
 						startContent={<SearchIcon size={18} />}
 						type="search"
