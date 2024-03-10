@@ -1,6 +1,6 @@
 "use client";
 import { Switch } from "@nextui-org/react";
-import {useTheme} from "next-themes";
+import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { MoonIcon } from "./icons/MoonIcon";
 import { SunIcon } from "./icons/SunIcon";
@@ -13,20 +13,21 @@ export default function Switcher() {
 		setMounted(true);
 	}, []);
 
-  function handleOnSwitch() {
-    const mode = theme === 'dark' ? 'light' : 'dark';
-    setTheme(mode)
-  }
+	function handleOnSwitch() {
+		const mode = theme === "dark" ? "light" : "dark";
+		setTheme(mode);
+	}
 
 	if (!mounted) return null;
-  
+
 	return (
 		<Switch
+			defaultSelected = {theme === 'light' ? true : false}
 			size="lg"
 			color="success"
 			startContent={<SunIcon />}
 			endContent={<MoonIcon />}
-      onClick={() => handleOnSwitch()}
+			onClick={() => handleOnSwitch()}
 		></Switch>
 	);
 }

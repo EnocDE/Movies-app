@@ -11,7 +11,7 @@ import MovieIcon from "./icons/movie-clapperboard-part-2-svgrepo-com.svg"
 
 export default function Header() {
 	return (
-			<Navbar isBordered maxWidth="2xl">
+			<Navbar isBordered maxWidth="2xl" className="dark:bg-[#121212]">
 				<NavbarContent>
             <Image className="mx-auto md:ml-0 md:mr-2 min-w-[24px]" src={MovieIcon} width={24} height={24} alt="Logo movies app" />
 						<p className="font-bold text-inherit hidden md:block">Movies APP</p>
