@@ -1,41 +1,39 @@
-import {
-	Navbar,
-	NavbarBrand,
-	NavbarContent,
-	Input,
-} from "@nextui-org/react";
+import Link from "next/link";
+import { Navbar, NavbarContent } from "@nextui-org/react";
 import Image from "next/image";
-import { SearchIcon } from "./icons/SearchIcon";
 import Switcher from "./Switcher";
-import MovieIcon from "./icons/movie-clapperboard-part-2-svgrepo-com.svg"
+import MovieIcon from "./icons/movie-clapperboard-part-2-svgrepo-com.svg";
+import Search from "./Search";
+import { Suspense } from "react";
+import LoadingSpinner from "./LoadingSpinner";
 
 export default function Header() {
 	return (
-			<Navbar isBordered maxWidth="2xl" className="dark:bg-[#121212]">
-				<NavbarContent>
-            <Image className="mx-auto md:ml-0 md:mr-2 min-w-[24px]" src={MovieIcon} width={24} height={24} alt="Logo movies app" />
-						<p className="font-bold text-inherit hidden md:block">Movies APP</p>
-				</NavbarContent>
-
-				<NavbarContent as="div" className="items-center">
-					<Input
-						classNames={{
-              base: "md:w-[400px]",
-							mainWrapper: "h-full",
-							input: "text-small",
-							inputWrapper:
-								"h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
-						}}
-						placeholder="Escribe un titulo..."
-						size="sm"
-						startContent={<SearchIcon size={18} />}
-						type="search"
+		<Navbar isBordered maxWidth="2xl" className=" ">
+			<NavbarContent>
+				<Link href="/" className="flex gap-1">
+					<Image
+						className="mx-auto md:ml-0 md:mr-2 min-w-[24px]"
+						src={MovieIcon}
+						width={24}
+						height={24}
+						alt="Logo movies app"
 					/>
-				</NavbarContent>
+					<p className="font-bold text-inherit hidden md:block text-2xl w-full">
+						Movies APP
+					</p>
+				</Link>
+			</NavbarContent>
 
-				<NavbarContent as="div" className="w-[80px] md:w-auto" justify="end">
-					<Switcher />
-				</NavbarContent>
-			</Navbar>
+			<NavbarContent as="div" className="">
+				<Suspense fallback={<LoadingSpinner/>}>
+					<Search />
+				</Suspense>
+			</NavbarContent>
+
+			<NavbarContent as="div" className="w-[80px] md:w-auto" justify="end">
+				<Switcher />
+			</NavbarContent>
+		</Navbar>
 	);
 }

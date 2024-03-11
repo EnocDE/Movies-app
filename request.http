@@ -4,3 +4,15 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMDRmNTQ1NzZiODQ4ZDhmZTU3M
 ###
 GET https://api.themoviedb.org/3/configuration HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMDRmNTQ1NzZiODQ4ZDhmZTU3MTFhODU5NmFhZGU2YSIsInN1YiI6IjY1ZWQwZjE0Y2FkYjZiMDE4NWQ1OWQwZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.eqEBR3lOlJiyXCIOft3ujh1S3dIMjyDF3wkWOwOrKuk
+
+###
+GET  https://api.themoviedb.org/3/search/movie?query=g HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMDRmNTQ1NzZiODQ4ZDhmZTU3MTFhODU5NmFhZGU2YSIsInN1YiI6IjY1ZWQwZjE0Y2FkYjZiMDE4NWQ1OWQwZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.eqEBR3lOlJiyXCIOft3ujh1S3dIMjyDF3wkWOwOrKuk
+
+###
+GET  https://api.themoviedb.org/3/movie/984249?language=es-ES HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMDRmNTQ1NzZiODQ4ZDhmZTU3MTFhODU5NmFhZGU2YSIsInN1YiI6IjY1ZWQwZjE0Y2FkYjZiMDE4NWQ1OWQwZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.eqEBR3lOlJiyXCIOft3ujh1S3dIMjyDF3wkWOwOrKuk
+
+###
+GET https://api.themoviedb.org/3/discover/movie1232354&language=es-MX&page=1&sort_by=popularity.desc HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMDRmNTQ1NzZiODQ4ZDhmZTU3MTFhODU5NmFhZGU2YSIsInN1YiI6IjY1ZWQwZjE0Y2FkYjZiMDE4NWQ1OWQwZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.eqEBR3lOlJiyXCIOft3ujh1S3dIMjyDF3wkWOwOrKuk
