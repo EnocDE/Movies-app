@@ -19,9 +19,6 @@ export default function Header() {
 						height={24}
 						alt="Logo movies app"
 					/>
-					<p className="font-bold text-inherit hidden md:block text-2xl w-full">
-						Movies APP
-					</p>
 				</Link>
 			</NavbarContent>
 

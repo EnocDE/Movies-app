@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import MovieIcon from "./icons/movie-clapperboard-part-2-svgrepo-com.svg";
 
 export default function Footer() {
 	return (
@@ -31,16 +30,16 @@ export default function Footer() {
 						</a>
 					</nav>
 					<nav className="flex flex-col">
-						<h3>Designed by</h3>
+						<h3>Developed by</h3>
 						<a className="transition-colors bg-gradient-to-r from-violet-500 to-rose-600 bg-clip-text text-transparent" href="#">
 							Enoc Dominguez
 						</a>
-						<a
+						{/* <a
 							className="transition-colors bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent"
 							href="https://anjrot.com/"
 						>
 							AnjrotDev{" "}
-						</a>
+						</a> */}
 					</nav>
 					<nav className="flex flex-col">
 						<a className="hover:text-[#acacac] dark:hover:text-white transition-colors" href="#">

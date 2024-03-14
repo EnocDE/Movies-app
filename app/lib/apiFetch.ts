@@ -33,7 +33,7 @@ const apiFetch: APIFetch = {
 		try {
 			// const response = await fetch(`${buildUrl}?${buildParams}&language=es-MX`, apiConfig)
 			const response = await fetch(
-				`${buildUrl}?${buildParams}&language=es-MX`,
+				`${buildUrl}?${buildParams}&language=es-MX&&region=ISO-3166-2&adults=false`,
 				apiConfig
 			);
 
@@ -52,7 +52,7 @@ const apiFetch: APIFetch = {
 
 		try {
 			const response = await fetch(
-				`${buildUrl}/movie/${id}?language=es-ES,en-US`,
+				`${buildUrl}/movie/${id}?language=es-MX&&region=ISO-3166-2&adults=false`,
 				apiConfig
 			);
 

@@ -32,7 +32,7 @@ export default function Search() {
 				inputWrapper:
 					"h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
 			}}
-			placeholder="Escribe un titulo..."
+			placeholder="Buscar"
 			size="md"
 			startContent={<SearchIcon size={18} />}
 			type="search"
